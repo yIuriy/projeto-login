@@ -1,11 +1,57 @@
 @charset "UTF-8";
 
-:root{
-    --cor1: #D9D9D9; 
-    --cor2: #7F8C51; 
-    --cor3: #525936;
-    --cor4: #B6BF6F;
-    --cor5: #262626;
-    --corBranco: #FFFF;
-    --corPreto: #000;
+:root {
+  --cor1: #d9d9d9;
+  --cor2: #7f8c51;
+  --cor3: #525936;
+  --cor4: #b6bf6f;
+  --cor5: #262626;
+  --corBranco: #ffff;
+  --corPreto: #000;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: var(--cor4);
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+section#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--cor1);
+  width: 250px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+}
+
+section#login > div#image {
+  background: var(--cor4) url(../img/montanha.jpg) center center / cover
+    no-repeat fixed;
+  height: 200px;
+  display: block;
+}
+
+section#login > div#formulario {
+  padding: 10px;
+  display: block;
 }
