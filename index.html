@@ -1,26 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-queries.css">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/media-queries.css" />
+  </head>
+  <body>
     <main>
-        <section id="login">
-            <div id="image">
-       <!-- Aqui vai a imagem nas CSS -->
+      <section id="login">
+        <div id="image">
+          <!-- Aqui vai a imagem nas CSS -->
+        </div>
+        <div id="formulario">
+          <h1>Login</h1>
+          <p>
+            Seja Bem-Vindo(a) novamente. Faça login para acessar sua conta e
+            poder fazer as configurações no seu ambiente.
+          </p>
+          <form action="login.php" method="post" autocomplete="one">
+            <div class="campo">
+                <label for="ilogin">
+                <span class="material-symbols-outlined">person</span></label>
+              <input
+                type="email"
+                name="login"
+                id="ilogin"
+                required
+                placeholder="Digite seu e-mail"
+                autocomplete="email"
+                maxlength="30"
+              />
+              
             </div>
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja Bem-Vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
-
-                </form>
+            <div class="campo">
+                <label for="isenha"><span class="material-symbols-outlined">vpn_key</span></label>
+              <input
+                type="password"
+                name="senha"
+                id="isenha"
+                required
+                minlength="8"
+                maxlength="30"
+                autocomplete="current-password"
+                placeholder="Digite sua senha"
+              />
+              
             </div>
-        </section>
+            <input type="submit" value="Entrar">
+            <a href="esqueci.html" class="botao">Esqueci a senha</a>
+          </form>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
