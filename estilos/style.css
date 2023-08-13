@@ -35,7 +35,6 @@ section#login {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   background-color: var(--cor1);
   width: 250px;
   height: 500px;
@@ -43,9 +42,9 @@ section#login {
   overflow: hidden;
   display: block;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.212);
-
   transition: width 0.7s, height 0.7s ;
   transition-timing-function: ease;
+  transform: translate(-50%, -50%);
 }
 
 section#login > div#image {
@@ -75,15 +74,34 @@ form > div.campo{
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 8px;
     margin: 5px 0px;
+    margin-bottom: 10px;
 }
 
-.material-symbols-outlined{
-    margin-top: 5px;
-    margin-left: 5px;
-    color: var(--corBranco);
+div.campo > label{
+  display: none;
 }
+
+div.campo .material-symbols-outlined{
+    color: var(--corBranco);
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+}
+
+div.campo > input {
+  background-color:var(--cor5);
+ font-size: 1em;
+ width: calc(100% -47px);
+ height: 100%;
+ border: 0px;
+ border-radius: 8px;
+ padding: 2px;
+ transform: translateY(-9px);
+ outline: none;
+ color: var(--corBranco);
+} 
 
 form > input[type=submit]{
 display: block;
@@ -92,7 +110,7 @@ border-radius:10px;
 font-size: 1em;
 margin-bottom: 10px;
 width: 100%;
-height: 30px;
+height: 35px;
 background-color: var(--cor5);
 color: var(--corBranco);
 cursor: pointer;
@@ -108,11 +126,11 @@ form > a.botao{
     text-align: center;
     font-size: 1em;
     width: 100%;
-    height: 30px;
+    height: 35px;
     background-color: var(--cor5);
     color: var(--corBranco);
     text-decoration: none;
-    padding: 2px;
+    padding: 4px;
 }
 
 form > a.botao:hover{

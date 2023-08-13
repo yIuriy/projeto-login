@@ -33,6 +33,7 @@ Grandes Telas: acima de 1200
 
   section#login {
     width: 80vw;
+    height: 280px;
   }
 
   section#login > div#image {
@@ -45,7 +46,7 @@ Grandes Telas: acima de 1200
     float: right;
     width: 70%;
   }
-
+}
 @media screen and (min-width: 992px) {
   body {
     background-image: linear-gradient(
@@ -56,8 +57,9 @@ Grandes Telas: acima de 1200
     );
   }
 
-  section#login {
+  section#login  {
     width: 990px;
+    height: 350px;
   }
 
   section#login > div#image {
@@ -79,4 +81,4 @@ Grandes Telas: acima de 1200
     font-size: 1.2em;
   }
 }
-}
+
